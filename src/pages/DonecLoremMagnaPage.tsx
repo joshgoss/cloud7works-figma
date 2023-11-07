@@ -98,11 +98,11 @@ function DonecLoremMagna() {
           <h2 className="text-[20px] font-bold mb-3">ADDRESS</h2>
           <Field>
             <Label htmlFor="street">Street</Label>
-            <Input className="w-1/2" name="street" value="" />
+            <Input className="w-4/6" name="street" value="" />
           </Field>
           <Field>
             <Label htmlFor="city">City</Label>
-            <Input className="w-1/2" name="city" value="" />
+            <Input className="w-4/6" name="city" value="" />
           </Field>
           <div>
             <Field className="inline-block">
@@ -115,10 +115,13 @@ function DonecLoremMagna() {
             </Field>
 
             <Field className="inline-block">
-              <Label className="w-[40px]" htmlFor="zip">
+              <Label
+                htmlFor="zip"
+                style={{ width: "40px", marginLeft: "15px" }}
+              >
                 Zip
               </Label>
-              <Input name="zip" value="90210" />
+              <Input className="w-[80px]" name="zip" value="90210" />
             </Field>
           </div>
           <Field>

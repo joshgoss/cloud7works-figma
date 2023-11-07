@@ -4,16 +4,18 @@ type Props = {
   className?: string;
   htmlFor: string;
   children: React.ReactNode | string;
+  style?: object;
 };
 
-function Label({ className, children, htmlFor }: Props) {
+function Label({ className, children, htmlFor, style }: Props) {
   return (
     <label
       className={classNames(
-        "w-[100px] text-right inline-block uppercase mr-3 align-top leading-[32px]",
-        className
+        className,
+        "w-[100px] text-right inline-block uppercase mr-3 align-top leading-[32px]"
       )}
       htmlFor={htmlFor}
+      style={style}
     >
       {children}
     </label>
