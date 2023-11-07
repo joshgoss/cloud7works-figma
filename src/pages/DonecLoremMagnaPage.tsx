@@ -23,20 +23,21 @@ function DonecLoremMagna() {
       </div>
 
       <div className="ml-7">
-        <Label htmlFor="nunlu">Label</Label>
-        <Select name="nunlu" className="mr-5" label="Label" disabled>
-          <Select.Option selected={true} value={1}>
-            NUN LUCTUS VEL TORTOR QUIS SODALES
-          </Select.Option>
-        </Select>
-
-        <Button disabled>Submit</Button>
+        <Field>
+          <Label htmlFor="nunlu">Label</Label>
+          <Select name="nunlu" className="mr-5" disabled>
+            <Select.Option selected={true} value={1}>
+              NUN LUCTUS VEL TORTOR QUIS SODALES
+            </Select.Option>
+          </Select>
+          <Button disabled>Submit</Button>
+        </Field>
       </div>
 
       <Hr />
 
-      <div className="flex flex-row">
-        <div className="basis-1/2">
+      <div className="flex flex-row mb-10">
+        <div className="basis-7/12">
           <h2 className="text-[20px] font-bold mb-3">ABOUT</h2>
 
           <div className="mx-auto md:w-[570px]">
@@ -78,7 +79,7 @@ function DonecLoremMagna() {
 
             <Field>
               <Label htmlFor="gender">Gender</Label>
-              <Select label="Gender" name="gender">
+              <Select name="gender">
                 <Select.Option value="male" selected>
                   M - Male
                 </Select.Option>
@@ -93,7 +94,7 @@ function DonecLoremMagna() {
           </div>
         </div>
 
-        <div className="basis-1/2">
+        <div className="basis-1/3">
           <h2 className="text-[20px] font-bold mb-3">ADDRESS</h2>
           <Field>
             <Label htmlFor="street">Street</Label>
@@ -106,7 +107,7 @@ function DonecLoremMagna() {
           <div>
             <Field className="inline-block">
               <Label htmlFor="state">State</Label>
-              <Select label="State" name="state">
+              <Select name="state">
                 <Select.Option value="ca" selected>
                   CA - California
                 </Select.Option>
@@ -122,7 +123,7 @@ function DonecLoremMagna() {
           </div>
           <Field>
             <Label htmlFor="country">Country</Label>
-            <Select className="w-1/2" label="country" name="country">
+            <Select className="w-1/2" name="country">
               <Select.Option value="us" selected>
                 United States
               </Select.Option>
@@ -147,7 +148,7 @@ function DonecLoremMagna() {
         </h2>
 
         <div className="flex w-full">
-          <div className="basis-1/2">
+          <div className="basis-7/12">
             <Field className="mb-15">
               <Checkbox
                 className="mb-10"
@@ -158,7 +159,7 @@ function DonecLoremMagna() {
             </Field>
           </div>
 
-          <div className="basis-1/2">
+          <div>
             <Field>
               <Label htmlFor="letterDate">Date</Label>
               <DatePicker name="letterDate" value="" />

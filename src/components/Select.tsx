@@ -6,14 +6,13 @@ type Props = {
   className?: string;
   disabled?: boolean;
   name: string;
-  label?: string;
 };
-function Select({ children, className, disabled, name, label }: Props) {
+function Select({ children, className, disabled, name }: Props) {
   return (
     <select
       id={name}
       className={classNames(
-        "p-1 border border-[#E1E1E1]",
+        "h-[32px] p-1 border border-[#E1E1E1]",
         { "bg-[#EDEDED]": disabled, "bg-[#fcfcfc]": !disabled },
         className
       )}

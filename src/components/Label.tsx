@@ -10,7 +10,7 @@ function Label({ className, children, htmlFor }: Props) {
   return (
     <label
       className={classNames(
-        "w-[90px] text-right inline-block uppercase mr-3 align-top leading-[26px]",
+        "w-[100px] text-right inline-block uppercase mr-3 align-top leading-[32px]",
         className
       )}
       htmlFor={htmlFor}
