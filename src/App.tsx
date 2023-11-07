@@ -7,7 +7,7 @@ function App() {
       {/** User bar */}
       <div className="h-[48px] bg-[#ccc] border-b border-[#E5E5E5]">
         <div className="container h-full mx-auto md:w-[1281px]">
-          <div className="flex h-full justify-end items-center">
+          <div className="flex h-full justify-end items-center px-6">
             <div>
               <span className="underline">Hi, Barbara </span>{" "}
               <span className="">&or;</span>
@@ -17,18 +17,18 @@ function App() {
       </div>
 
       {/** Logo and Nav */}
-      <div className="border-b border-[#E5E5E5] py-2">
+      <div className="border-b border-[#E5E5E5]">
         <div className="container h-full mx-auto md:w-[1281px]">
-          <div className="flex h-[80px] items-center justify-between">
+          <div className="flow-root">
             {/* Logo */}
-            <div className="bg-[#D9D9D9] h-[73px] w-[241px] text-center">
+            <div className="float-left bg-[#D9D9D9] h-[73px] w-[241px] text-center mt-[10px] mb-[13px]">
               <span className="text-[18px] font-[600] inline-block align-middle leading-[73px]">
                 WEB PORTAL LOGO
               </span>
             </div>
 
             {/* Navigation */}
-            <ul className="font-[600]">
+            <ul className="float-right font-[600] mt-[30px]">
               <li className="inline mr-5">Dashboard</li>
               <li className="inline-block mr-5 border-b-[5px] border-black">
                 Lorem Ipsum

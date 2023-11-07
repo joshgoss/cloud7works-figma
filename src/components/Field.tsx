@@ -12,7 +12,7 @@ type Props = {
 };
 
 function Field({ className, children }: Props) {
-  return <div className={classNames("mb-2", className)}>{children}</div>;
+  return <div className={classNames("mb-[15px]", className)}>{children}</div>;
 }
 
 export default Field;
