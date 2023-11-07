@@ -22,7 +22,7 @@ function DonecLoremMagna() {
         </Link>
       </div>
 
-      <div className="ml-7">
+      <div className="ml-1">
         <Field>
           <Label htmlFor="nunlu">Label</Label>
           <Select name="nunlu" className="mr-5" disabled>
@@ -36,11 +36,11 @@ function DonecLoremMagna() {
 
       <Hr />
 
-      <div className="flex flex-row mb-10">
-        <div className="basis-7/12">
+      <div className="flex flex-row mb-10 justify-between">
+        <div className="basis-6/12">
           <h2 className="text-[20px] font-bold mb-3">ABOUT</h2>
 
-          <div className="mx-auto md:w-[570px]">
+          <div className="mx-auto">
             <div className="flex justify-between">
               <Field>
                 <Label htmlFor="uniqueId">Unique</Label>
@@ -94,7 +94,7 @@ function DonecLoremMagna() {
           </div>
         </div>
 
-        <div className="basis-1/3">
+        <div className="basis-5/12">
           <h2 className="text-[20px] font-bold mb-3">ADDRESS</h2>
           <Field>
             <Label htmlFor="street">Street</Label>
