@@ -3,7 +3,7 @@ type Props = {
 };
 
 function Header({ children }: Props) {
-  return <h1 className="text-[30px] mb-7">{children}</h1>;
+  return <h1 className="text-[40px] mb-7 font-[700]">{children}</h1>;
 }
 
 export default Header;

@@ -10,7 +10,7 @@ function DatePicker({ name, value }: Props) {
     <input
       id={name}
       type="date"
-      className="bg-[#fcfcfc] border border-[#EDEDED] p-1 text-xs"
+      className="bg-[#fcfcfc] border border-[#EDEDED] p-1"
       name={name}
       value={value}
     />

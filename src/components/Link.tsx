@@ -10,7 +10,7 @@ type Props = {
 function Link({ className, children, href, title }: Props) {
   return (
     <a
-      className={classNames("text-xs text-blue-800 underline ml-8", className)}
+      className={classNames("text-blue-800 underline ml-8", className)}
       href={href}
       title={title}
     >

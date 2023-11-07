@@ -14,7 +14,7 @@ function Input({ className, disabled, name, placeholder, value }: Props) {
     <input
       id={name}
       className={classNames(
-        "p-1  rounded border border-[#EDEDED] text-xs uppercase",
+        "p-1 rounded border border-[#EDEDED] uppercase",
         {
           "bg-[#FCFCFC]": !disabled,
           "bg-[#EDEDED]": disabled,

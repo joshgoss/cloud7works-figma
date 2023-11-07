@@ -13,7 +13,7 @@ function Select({ children, className, disabled, name, label }: Props) {
     <select
       id={name}
       className={classNames(
-        "text-xs  p-1 border border-[#E1E1E1]",
+        "p-1 border border-[#E1E1E1]",
         { "bg-[#EDEDED]": disabled, "bg-[#fcfcfc]": !disabled },
         className
       )}
@@ -31,11 +31,7 @@ type OptionProps = {
 };
 Select.Option = ({ children, className, selected, value }: OptionProps) => {
   return (
-    <option
-      className={classNames("text-xs", className)}
-      value={value}
-      selected={selected}
-    >
+    <option className={classNames(className)} value={value} selected={selected}>
       {children}
     </option>
   );

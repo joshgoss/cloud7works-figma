@@ -23,6 +23,7 @@ function DonecLoremMagna() {
       </div>
 
       <div className="ml-7">
+        <Label htmlFor="nunlu">Label</Label>
         <Select name="nunlu" className="mr-5" label="Label" disabled>
           <Select.Option selected={true} value={1}>
             NUN LUCTUS VEL TORTOR QUIS SODALES
@@ -36,17 +37,22 @@ function DonecLoremMagna() {
 
       <div className="flex flex-row">
         <div className="basis-1/2">
-          <h2 className="text-xs font-bold mb-3">ABOUT</h2>
+          <h2 className="text-[20px] font-bold mb-3">ABOUT</h2>
 
           <div className="mx-auto md:w-[570px]">
-            <div className="flex">
-              <Field className="basis-1/2">
+            <div className="flex justify-between">
+              <Field>
                 <Label htmlFor="uniqueId">Unique</Label>
-                <Input name="uniqueId" value="34-56789012-3" disabled />
+                <Input
+                  className="w-[144px]"
+                  name="uniqueId"
+                  value="34-56789012-3"
+                  disabled
+                />
               </Field>
-              <Field className="basis-1/2">
+              <Field>
                 <Label htmlFor="altId">ALT ID</Label>
-                <Input name="altId" value="" disabled />
+                <Input className="w-[144px]" name="altId" value="" disabled />
               </Field>
             </div>
 
@@ -88,7 +94,7 @@ function DonecLoremMagna() {
         </div>
 
         <div className="basis-1/2">
-          <h2 className="text-xs font-bold mb-3">ADDRESS</h2>
+          <h2 className="text-[20px] font-bold mb-3">ADDRESS</h2>
           <Field>
             <Label htmlFor="street">Street</Label>
             <Input className="w-1/2" name="street" value="" />
@@ -123,7 +129,7 @@ function DonecLoremMagna() {
             </Select>
           </Field>
           <br /> <br /> <br />
-          <h2 className="text-xs font-bold mb-3">CONTACT</h2>
+          <h2 className="text-[20px] font-bold mb-3">CONTACT</h2>
           <Field>
             <Label htmlFor="telephone">Telephone</Label>
             <Input className="w-1/4" name="telephone" value="" />
@@ -136,23 +142,19 @@ function DonecLoremMagna() {
       </div>
 
       <div>
-        <h2 className="text-xs font-bold mb-3 border-3 border-b border-[#e1e1e1]">
+        <h2 className="text-[20px] font-bold mb-3 border-3 border-b border-[#e1e1e1]">
           LETTER
         </h2>
 
-        <div className="flex mb-7">
+        <div className="flex w-full">
           <div className="basis-1/2">
-            <Field>
+            <Field className="mb-15">
               <Checkbox
                 className="mb-10"
                 label="Send a letter"
                 name="sendLetter"
                 checked
               />
-            </Field>
-            <Field>
-              <Label htmlFor="comments">Comments</Label>
-              <TextArea name="comments" value="" />
             </Field>
           </div>
 
@@ -164,7 +166,12 @@ function DonecLoremMagna() {
           </div>
         </div>
 
-        <div className="mt-8 ml-20">
+        <Field className="mt-[50px]">
+          <Label htmlFor="comments">Comments</Label>
+          <TextArea name="comments" value="" />
+        </Field>
+
+        <div className=" mt-8 ml-20">
           <Button>Submit</Button>
           <Link className="ml-8" href="#" title="Reset Changes">
             Reset Changes

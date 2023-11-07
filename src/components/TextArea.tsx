@@ -5,7 +5,7 @@ type Props = {
 
 function TextArea({ name, value }: Props) {
   return (
-    <textarea className="bg-[#FCFCFC] border border-[#EBEBEB] h-[70px] w-3/4">
+    <textarea className="bg-[#FCFCFC] border border-[#EBEBEB] h-[109px] w-[694px]">
       {value}
     </textarea>
   );
